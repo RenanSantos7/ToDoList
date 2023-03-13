@@ -1,6 +1,6 @@
 var itens = document.getElementsByClassName("item");
-var novaTarefa = document.getElementById("novaTarefa");
-var adNovaTarefa = document.getElementById("addTarefa");
+var novaTarefaInput = document.getElementById("tarefaNova_input");
+var novaTarefaBotao = document.getElementById("tarefaNova_botao");
 var lista = document.getElementById("lista");
 
 for (var i = 0; i < itens.length; i++) {
@@ -25,7 +25,7 @@ function montaLi(texto) {
     let labelText = "Tarefa";
 
     li.classList.add("item-lista");
-    labelCheck.classList.add("item");
+    labelCheck.classList.add("tarefa");
     inputCheck.classList.add("check");
 
     //inputCheck.type = "checkbox";
@@ -39,10 +39,10 @@ function montaLi(texto) {
     return li
 }
 
-adNovaTarefa.addEventListener("click",function(event){
+novaTarefaBotao.addEventListener("click",function(event){
     event.preventDefault();
 
-    let tarefa = novaTarefa.value;
+    let tarefa = novaTarefaInput.value;
 
     lista.appendChild(montaLi(tarefa));
 });
