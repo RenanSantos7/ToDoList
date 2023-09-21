@@ -93,16 +93,7 @@ h1 {
 
 .add-nova-tarefa {
     bottom: 10px;
-    border-top: 1px solid var(--cor-borda);
-    padding: 1rem 0;
-    /* background-color: red; */
-}
-
-.add-nova-tarefa h2 {
-    color: var(--cor-titulo);
-    font-size:28px;
-    font-weight: normal;
-    margin-bottom: 16px;
+    padding-block: 1rem;
 }
 
 #txtnovatarefa {

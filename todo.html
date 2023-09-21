@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="imgs/brastra.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap">
@@ -17,26 +16,18 @@
 
 <body>
     <main class="corpo">
-        <section id="lista-tarefas">
-            <h1 contenteditable="true">Lista</h1>
-            <article class="tarefa">
-                <label class="nometarefa"><input type="checkbox" class="check">Tarefa 1</label>
-            </article>
-
-            <article class="tarefa">
-                <label class="nometarefa"><input type="checkbox" class="check">Tarefa 2</label>
-            </article>
-        </section>
-
+        <h1>Lista de tarefas</h1>
         <section class="add-nova-tarefa">
-            <h2>Adicione uma nova tarefa</h2>
             <form class="form-nova-tarefa">
-                <input type="text" name="novaTarefa" id="txtnovatarefa" placeholder="Nova Tarefa">
-                <button id="btaddtarefa">+</button>
+                <input type="text" name="novaTarefa" id="txtnovatarefa" placeholder="Adicionar nova Tarefa">
+                <button type="button" id="btaddtarefa">+</button>
             </form>
         </section>
+        
+        <section id="lista-tarefas">
+        </section>
     </main>
-    <script type="text/javascript" src="todo.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>
