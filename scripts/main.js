@@ -14,6 +14,7 @@ btAddTarefa.addEventListener("click", (event) => {
 
 txtNovaTarefa.addEventListener("keypress", (event) => {
     if (event.key === "Enter") {
+        event.preventDefault()
         criaNovaTarefa()
     }
 })
